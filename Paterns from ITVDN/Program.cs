@@ -1,12 +1,16 @@
-﻿using System;
+﻿using PatternAbstarctFactory;
+using System;
 
 namespace Paterns_from_ITVDN
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Client client = null;
+            client = new Client(new PatternAbstarctFactory.Concrete.Factory1());
+            client.Run();
+            Console.ReadKey();
         }
     }
 }

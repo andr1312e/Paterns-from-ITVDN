@@ -6,4 +6,8 @@
     <RootNamespace>Paterns_from_ITVDN</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PatternAbstarctFactory\PatternAbstarctFactory.csproj" />
+  </ItemGroup>
+
 </Project>
